@@ -1,0 +1,6 @@
+{
+  "name": "DIGITALPRODS.PRO SPEEDTEST",
+  "description": "High-performance internet speed testing and network diagnostic utility with real-time throughput metrics, loaded latency, jitter analysis, video streaming test, and history logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
