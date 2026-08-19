@@ -30,10 +30,14 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        # Skip optional native dependencies that can fail on the runner (e.g. native bindings)
+        run: npm ci --omit=optional
 
       - name: Build
         run: npm run build
+
+      - name: List dist
+        run: ls -la ./dist || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
